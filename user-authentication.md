@@ -14,8 +14,8 @@ The client calls nest2.com/api/posts/load/?user-name=user@nest1.com&user-token=s
 
 client	| nest1.com | nest2.com
 --- | --- | ---
-user@nest1.com log in to nest1.com | (generating secret) | (nothing)
-/api/posts/load/?user-name=user@nest1.com&user-token=s3cr3t | (nothing) | (recieving request)
-(waiting)| (recieving request) | nest1.com/api/user/authenticate?user-name=user@nest1.com&user-token=s3cr3t
-(waiting)| is authenticated | (recieving result)
-(recieving result)| (nothing) | send posts
+**user@nest1.com log in to nest1.com** | *(generating secret)* | 
+**/api/posts/load/?user-name=user@nest1.com&user-token=s3cr3t** | | *(recieving request)*
+*(waiting)* | *(recieving request)* | **nest1.com/api/user/authenticate?user-name=user@nest1.com&user-token=s3cr3t**
+*(waiting)* | **is authenticated** | *(recieving result)*
+*(recieving result)* |  | **send posts**
