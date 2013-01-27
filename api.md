@@ -1,21 +1,22 @@
 
 ## /api/posts/load/ ##
-*Definition*
+**Definition**
+
 Will return an array of posts. The user is wether the post owner or is in the share group.
 
-*PARAMETERS(GET)*
-search="text search"_(text)(optional)_
-
-start-position=0_(number)(optional)_
-
-post-count=10_(number)(optional)_
-
-user-name="user@nest.com"_(text)(optional)(is required when you call the api from a different nest)_
-
-user-token="ad73jsad3"_(text)(optional)(is required when you call the api from a different nest)_
+**PARAMETERS(GET)**
 
 
-*RESULT(json)*
+Parameter | Example | Information
+--- | --- | ---
+search | "text search" | *(text)(optional)*
+start-position | 0 | *(number)(optional)*
+post-count | 10 | *(number)(optional)*
+user-name | "user@nest.com" | *(text)(optional)(is required when you call the api from a different nest)*
+user-token | "ad73jsad3" | *(text)(optional)(is required when you call the api from a different nest)*
+
+
+**RESULT(json)**
 ```javascript
 {	
 	"STATUS":"STATUS_SUCCESS"
@@ -40,19 +41,20 @@ user-token="ad73jsad3"_(text)(optional)(is required when you call the api from a
 ```
 
 ## /api/posts/get/ ##
-*Definition*
+**Definition**
+
 Will return an array of posts by the given entryIds. The user is wether the post owner or is in the share group.
 
 
-*PARAMETERS(GET)*
+**PARAMETERS(GET)**
 
-entryIds=["(uuid)", "(uuid)"]_(array of uuids)(required)_
+Parameter | Example | Information
+--- | --- | ---
+entryIds | ["(uuid)", "(uuid)"] | *(array of uuids)(required)*
+user-name | "user@nest.com" | *(text)(optional)(is required when you call the api from a different nest)*
+user-token | "ad73jsad3" | *(text)(optional)(is required when you call the api from a different nest)*
 
-user-name="user@nest.com"_(text)(optional)(is required when you call the api from a different nest)_
-
-user-token="ad73jsad3"_(text)(optional)(is required when you call the api from a different nest)_
-
-*RESULT(json)*
+**RESULT(json)**
 
 ```javascript
 {	
