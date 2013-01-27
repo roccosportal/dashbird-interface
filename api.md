@@ -231,5 +231,25 @@ user-token | "ad73jsad3" | *(text)(optional)(is required when you call the api f
 }
 ```
 
+## /api/user/authenticate ##
+
+**Definition**
+This call is to determine if the given user token belongs to the user.
+
+**PARAMETERS(GET)**
+
+Parameter | Example | Information
+--- | --- | ---
+user-name | "user@nest.com" | *(text)*
+user-token | "ad73jsad3" | *(text)*
+
+**RESULT(json)**
+```javascript
+{	
+	"STATUS":"STATUS_SUCCESS"
+}
+```
+
+
 
 
