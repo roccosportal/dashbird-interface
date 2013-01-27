@@ -277,6 +277,8 @@ Parameter | Example | Information
 --- | --- | ---
 user-name | "user@nest.com" | *(text)*
 user-token | "ad73jsad3" | *(text)*
+nest | "nest2.com" | *(text)*
+nest-token | "wqas32" | *(text)*
 
 **RESULT(json)**
 
