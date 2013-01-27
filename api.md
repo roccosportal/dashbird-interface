@@ -1,3 +1,37 @@
+## general ##
+
+**Result**
+
+The result template has always the same layout.
+
+```javascript
+{	
+	"STATUS":"STATUS_SUCCESS"
+}
+```
+
+```javascript
+{	
+	"STATUS":"STATUS_SUCCESS",
+	"DATA" : {}
+}
+```
+
+```javascript
+{	
+	"STATUS":"STATUS_ERROR"
+}
+```
+
+```javascript
+{	
+	"STATUS":"STATUS_ERROR",
+	"MESSAGE" : ""
+}
+```
+
+
+
 
 ## /api/posts/load/ ##
 **Definition**
@@ -234,6 +268,7 @@ user-token | "ad73jsad3" | *(text)(optional)(is required when you call the api f
 ## /api/user/authenticate ##
 
 **Definition**
+
 This call is to determine if the given user token belongs to the user.
 
 **PARAMETERS(GET)**
@@ -244,6 +279,7 @@ user-name | "user@nest.com" | *(text)*
 user-token | "ad73jsad3" | *(text)*
 
 **RESULT(json)**
+
 ```javascript
 {	
 	"STATUS":"STATUS_SUCCESS"
